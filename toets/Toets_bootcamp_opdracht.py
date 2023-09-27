@@ -97,30 +97,27 @@ HAMZA DIT MOET JE NOG DOEN
 # Dit blijf je herhalen totdat de gebruiker een getal tussen 0 en 10 heeft ingevoerd.
 # Voert de gebruiker iets anders in dan een getal: geef een foutmelding.
 
-cijfer_vraag = int(input('geef me een cijfer tussen 1-10: '))
-if cijfer_vraag == 10:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 9:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 8:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 7:
-    print('\033[32m!!! u heeft de correcte antwoord gekozen :D !!!\033[0m')
-elif cijfer_vraag == 6:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 5:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 4:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 3:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 2:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
-elif cijfer_vraag == 1:
-    print('u heeft niet de correcte cijfer gekozen kies weer.')
+cijfervraag = int(input('geef me een cijfer tussen 1-10: '))
+ANTWOORD_7 = 5
+
+if cijfervraag != ANTWOORD_7:
+    print ("Helaas niet goed")
 
 else:
-    print('u moet een cijfer typen')
+    print ("Goed zo, dat is het juiste antwoord!")
 
+
+# -------------------------------------------------------------------------------------------------------------------
+
+# Opdracht 10:
+# repareer de volgende code:
+MAX = 20
+getal = print("Voer een getal in")
+if getal > MAX:
+   input(f"Het getal is groter dan {MAX}")
+elif getal < MAX:
+  input(f"Het getal is kleiner dan {MAX}")
+else:
+   input(f"Het getal is gelijk aan {MAX}")
 
 # -------------------------------------------------------------------------------------------------------------------
